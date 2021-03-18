@@ -1,0 +1,68 @@
+:root{
+    --primary-color: #ff1111;
+    --light-color:#ffffff;
+    --secondary-color: #c93535;
+}
+
+#event{
+    background-image: url(../res/background-event.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+#event .body{
+    position: absolute;
+    right: 50%;
+    height: 100%;
+    width: 50%;
+}
+
+#event .content{
+    overflow: hidden;
+    border: 5px solid var(--light-color);
+}
+
+#event .content.festival-durian{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 400px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#event .festival-durian .title,#event .festival-durian .time,#event .festival-durian .place{
+    color: var(--primary-color);
+}
+
+#event .festival-durian .time{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#event .festival-durian .title{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+#event .festival-durian .place{
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+#event .festival-durian .image{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+
+#event .festival-durian .image img{
+    width: 100%;
+    height: auto;
+}

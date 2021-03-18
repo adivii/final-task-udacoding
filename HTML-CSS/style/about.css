@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #ff1111;
+    --light-color:#ffffff;
+    --secondary-color: #c93535;
+}
+
+#about{
+    background-color: var(--light-color);
+}
+
+#about .background{
+    position: absolute;
+    background-image: url("../res/background-about.jpg");
+    background-size: cover;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#about .content{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+#about .content .text{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

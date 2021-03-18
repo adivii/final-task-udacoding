@@ -1,0 +1,62 @@
+:root{
+    --primary-color: #ff1111;
+    --light-color:#ffffff;
+    --secondary-color: #c93535;
+}
+
+#feedback{
+    background-image:url(../res/background-feedback.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#feedback .content{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 300px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#feedback .content .content-review{
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin: 24px;
+    text-align: center;
+}
+
+#feedback .content-avatar img{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-50%);
+}
+
+#feedback .content .content-name{
+    color: var(--light-color);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(65px,-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#feedback .content.satu{
+    left: 25%;
+}
+
+#feedback .content.dua{
+    left: 75%;
+}
+
+#feedback .content .content-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary-color);
+}

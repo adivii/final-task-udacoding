@@ -1,0 +1,30 @@
+:root{
+    --primary-color: #ff1111;
+    --light-color:#ffffff;
+    --secondary-color: #c93535;
+}
+
+#home{
+    background-image: url("../res/background-home.jpg");
+    background-size: cover;
+    background-position: 0 0;
+}
+
+#home .title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary-color);
+    width: fit-content;
+}
+
+#home .slogan{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,40px);
+}

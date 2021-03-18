@@ -1,0 +1,89 @@
+:root{
+    --primary-color: #ff1111;
+    --light-color:#ffffff;
+    --secondary-color: #c93535;
+}
+
+#galery{
+    background-color: var(--primary-color);
+}
+
+#galery .image-container{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+}
+
+#galery .title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+#galery .slideshow{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#galery .slide-image{
+    position: relative;
+    height: 100%;
+    width: 400%;
+    animation: slideshow 10s ease-in-out infinite;
+}
+
+#galery .image{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+#galery .slideshow img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+
+#galery img.background{
+    height: 150%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: blur(10px);
+}
+
+@keyframes slideshow{     
+    0%{
+        left: 0;
+    }
+    28%{
+        left: 0;
+    }
+    33%{
+        left: -100%;
+    }
+    61%{
+        left: -100%;
+    }
+    66%{
+        left: -200%;
+    }
+    95%{
+        left: -200%;
+    }
+    100%{
+        left: 0;
+    }
+}
